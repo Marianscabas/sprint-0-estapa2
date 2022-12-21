@@ -26,18 +26,40 @@ h1 {
   padding: 50px 200px;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+main {
+  display: flex;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown div {
+  background-color: hsla(236deg, 21%, 26%, 0.847);
+}
+
+.main__div_2 {
+  background-color: hsl(345deg, 95%, 68%);
+}
+
 .footer__div_p {
   padding: 110px 440px;
   background-color: linear-gradient(hsla(236deg, 21%, 26%, 0.847), hsl(235deg, 16%, 14%));
   background-image: url(../images/pattern-hills.svg);
   background-size: cover;
 }
-.footer__div_p a {
-  text-decoration: none;
-  font-weight: 700;
-}
-.footer__div_p a:hover {
-  color: hsl(345deg, 95%, 68%);
+
+.footer__span_p {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -50,19 +50,28 @@ h1{
 }
 
 .container{
-    width: 100%;
-    min-height: 100vh;
+   
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #333;
+    background-color: $White;
+}
+
+main{
+   display: flex;
 }
 .countdown{
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    flex-wrap: wrap;
+   display: flex;
+   justify-content: center
+
+}
+ .countdown div{
+    background-color: $Dark-desaturated-blue
+ }
+
+.main__div_2{
+    background-color: $Soft-red
 }
 
 
