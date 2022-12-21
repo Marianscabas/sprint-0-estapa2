@@ -5,7 +5,7 @@ const $dias = document.getElementById('days'),
 
 
 
-const countdownDate = new Date('12 25, 2022 10:28:00').getTime();
+const countdownDate = new Date('12 24, 2022 00:00:00').getTime();
 
 let interval = setInterval(function(){
    
@@ -21,7 +21,7 @@ let interval = setInterval(function(){
     let segundos = Math.floor((distance % (1000 * 60 )) / (1000));
 
    
-    $dias.innerHTML = dias;
+    $dias.innerHTML = ('0' + dias).slice(-2);
     $horas.innerHTML = horas;
     $minutos.innerHTML = minutos;
     $segundos.innerHTML = ('0' + segundos).slice(-2);

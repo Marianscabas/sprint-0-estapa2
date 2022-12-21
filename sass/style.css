@@ -16,43 +16,55 @@ h1 {
   font-size: 24px;
   font-family: "Red Hat Text", sans-serif;
   letter-spacing: 12px;
+  text-align: justify;
 }
 
 .header__div_p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 110px;
+  margin-top: 100px;
   padding: 50px 200px;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: hsl(0deg, 0%, 100%);
 }
 
 main {
   display: flex;
-}
-
-.countdown {
-  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.countdown div {
-  background-color: hsla(236deg, 21%, 26%, 0.847);
+.main__div_p {
+  display: flex;
+  justify-content: space-around;
+  color: hsl(345deg, 95%, 68%);
+  font-size: 20px;
+  margin-left: 50px;
 }
 
-.main__div_2 {
-  background-color: hsl(345deg, 95%, 68%);
+.main__div_p div {
+  padding: 8px 32px;
+  text-align: center;
+  background-color: hsla(236deg, 21%, 26%, 0.847);
+  margin-left: -50px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.main__div_span {
+  display: flex;
+  justify-content: space-around;
+  color: hsl(345deg, 95%, 68%);
+  font-size: 12px;
+  font-family: "Red Hat Text", sans-serif;
+  letter-spacing: 5px;
+}
+
+.main__div_span div {
+  margin-left: 70px;
 }
 
 .footer__div_p {
-  padding: 110px 440px;
+  padding: 100px 400px;
   background-color: linear-gradient(hsla(236deg, 21%, 26%, 0.847), hsl(235deg, 16%, 14%));
   background-image: url(../images/pattern-hills.svg);
   background-size: cover;
@@ -60,6 +72,29 @@ main {
 
 .footer__span_p {
   display: flex;
+  margin-top: 20px;
+  margin-left: 170px;
+  gap: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  h1 {
+    color: aqua;
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .footer__div_p {
+    overflow: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
