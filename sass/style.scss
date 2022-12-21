@@ -1,0 +1,83 @@
+// importar tipografia
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+//font-family: 'Red Hat Text', sans-serif;
+
+// iportar partiañ o modulos 
+@import "./universal";
+
+
+// crear variables para el proyecto
+
+$White: hsl(0, 0%, 100%);
+$Dark-desaturated-blue: hsla(236, 21%, 26%, 0.847);
+$Very-dark-blue: hsl(235, 16%, 14%);
+$Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+$Grayish-blue: hsl(237, 18%, 59%);
+$Soft-red: hsl(345, 95%, 68%);
+
+//mixin aplicamos 
+
+@mixin paddings($porpocion) {
+    padding: $porpocion * 1px $porpocion*4px ;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+  }
+
+body {
+    background-color: $Very-dark-mostly-black-blue ;
+    background-image: url(../images/bg-stars.svg);
+    background-size: cover;
+ 
+}
+
+h1{
+    color: $White;
+    font-size: 24px;
+    font-family: 'Red Hat Text', sans-serif;
+    letter-spacing: 12px;
+}
+
+.header__div_p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+    @include paddings(50)
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #333;
+}
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+
+.footer__div_p{
+    @include paddings(110);
+    background-color: linear-gradient($Dark-desaturated-blue , $Very-dark-blue);
+    background-image: url(../images/pattern-hills.svg);
+    background-size: cover; 
+    
+   
+    
+}
+
+ .footer__span_p{
+ display: flex;
+
+    }
+        
