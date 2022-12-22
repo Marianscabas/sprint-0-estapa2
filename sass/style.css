@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 body {
@@ -63,6 +64,11 @@ main {
   margin-left: 70px;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+}
+
 .footer__div_p {
   padding: 100px 400px;
   background-color: linear-gradient(hsla(236deg, 21%, 26%, 0.847), hsl(235deg, 16%, 14%));
@@ -79,21 +85,27 @@ main {
 
 @media screen and (max-width: 700px) {
   body {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
-    max-width: 100%;
+  }
+  .header__div_p {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    padding: 5px;
   }
   h1 {
     color: aqua;
     font-size: 30px;
     letter-spacing: 10px;
   }
-  img {
-    width: 100%;
-    max-width: 400px;
+  .main__div_p {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
   }
-  .footer__div_p {
-    overflow: hidden;
+  footer {
+    position: absolute;
   }
 }
 
